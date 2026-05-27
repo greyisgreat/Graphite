@@ -1,0 +1,55 @@
+/* Premium Glassmorphic Foundation */
+.aubrey-glass {
+    background: rgba(220, 220, 220, 0.45);
+    backdrop-filter: blur(24px) saturate(120%);
+    -webkit-backdrop-filter: blur(24px) saturate(120%);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
+}
+
+.aubrey-glass-dark {
+    background: rgba(45, 45, 45, 0.75);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Smooth OS Window Scale Layer Animations */
+.window-transition {
+    transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.window-minimize-target {
+    transform: scale(0.8) translateY(100px);
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Custom Matte Scrollbars */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.03);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    transition: background 0.2s;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* Active Drag Overlays */
+.grabbing-engine {
+    cursor: grabbing !important;
+}
+
+iframe {
+    background-color: #ffffff;
+    color-scheme: light;
+}
